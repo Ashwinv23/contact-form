@@ -1,0 +1,25 @@
+en:
+  jobs:
+    contact:
+          title: "Send Us A Message"
+          language: "Choose your language"
+          name: "TELL US YOUR NAME"
+          fname_validate: "Type first name"
+          lname_validate: "Type last name"
+          email: "ENTER YOUR EMAIL"
+          email_validate: "Valid email is required: ex@abc.xyz"
+          email_placeholder: "Eg. example@email.com"
+          phone: "ENTER PHONE NUMBER"
+          phone_placeholder: "Eg. +1800 000 000"
+          message: "MESSAGE"
+          message_validate: "Message is required"
+          message_placeholder: "Write us a message!"
+          fname: "First name"
+          lname: "Last name"
+          submitform: "Send Message"
+
+          heading1: "Address"
+          heading2: "Lets Talk"
+          heading3: "General Support"
+    create:
+          success: "Submitted Successfully"

@@ -1,0 +1,25 @@
+fr:
+  jobs:
+    contact:
+          title: "Envoie-nous un message"
+          language: "Choisissez votre langue"
+          name: "DITES-NOUS VOTRE NOM"
+          fname_validate: "Tapez le prénom"
+          lname_validate: "Tapez le nom de famille"
+          email: "ENTRER VOTRE EMAIL"
+          email_validate: "Un e-mail valide est requis: ex@abc.xyz"
+          email_placeholder: "Eg. example@email.com"
+          phone: "ENTRER NUMÉRO DE TÉLÉPHONE"
+          phone_placeholder: "Eg. +1800 000 000"
+          message: "UN MESSAGE"
+          message_validate: "Le message est requis"
+          message_placeholder: "Écrivez-nous un message"
+          fname: "Prénom"
+          lname: "Nom de famille"
+          submitform: "Envoyer le message"
+
+          heading1: "Adresse"
+          heading2: "Parlons"
+          heading3: "Support général"
+    create:
+          success: "Soumis avec succès"

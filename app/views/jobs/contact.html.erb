@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Contact V17</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+		<link rel="stylesheet" type="text/css" href="fonts/Linearicons-Free-v1.0.0/icon-font.min.css">
+</head>
+<body>
+
+	<div class="container-contact100">
+		<div class="wrap-contact100">
+			<%= form_with(model: @job, class: "contact100-form validate-form") do |j| %>
+			  <% if @job.errors.any? %>
+            	<ul>
+              		<% @job.errors.full_messages.each do |message| %>
+                		<li><%= message %></li>
+              		<% end %>
+            	</ul>
+          	  <% end %>
+				<span class="contact100-form-title">
+					<%= t('.title') %>
+				</span>
+
+				<label class="label-input100" for="locale"><%= t('.language') %></label>
+				<div class="wrap-input100 rs1-wrap-input100" style="height: 55px;text-align: center;padding-top: 15px;">
+					<%= link_to 'English', root_path(locale: :en) %>
+				</div>
+				<div class="wrap-input100 rs2-wrap-input100" style="height: 55px;text-align: center;padding-top: 15px;">
+					<%= link_to 'French', root_path(locale: :fr) %>
+				</div>
+
+				<label class="label-input100" for="name"><%= t('.name') %> *</label>
+				<div class="wrap-input100 rs1-wrap-input100 validate-input" data-validate="<%= t('.fname_validate') %>">
+					<input id="fname" class="input100" type="text" name="fname" placeholder="<%= t('.fname') %>">
+					<span class="focus-input100"></span>
+				</div>
+				<div class="wrap-input100 rs2-wrap-input100 validate-input" data-validate="<%= t('.lname_validate') %>">
+					<input id="lname" class="input100" type="text" name="lname" placeholder="<%= t('.lname') %>">
+					<span class="focus-input100"></span>
+				</div>
+
+				<label class="label-input100" for="email"><%= t('.email') %> *</label>
+				<div class="wrap-input100 validate-input" data-validate="<%= t('.email_validate') %>">
+				    <input id="email" class="input100" type="text" name="email" placeholder="<%= t('.email_placeholder') %>">
+					<span class="focus-input100"></span>
+				</div>
+
+				<label class="label-input100" for="phone"><%= t('.phone') %></label>
+				<div class="wrap-input100">
+					<input id="phone" class="input100" type="text" name="phone" placeholder="<%= t('.phone_placeholder') %>">
+					<span class="focus-input100"></span>
+				</div>
+
+				<label class="label-input100" for="message"><%= t('.message') %>  *</label>
+				<div class="wrap-input100 validate-input" data-validate="<%= t('.message_validate') %>">
+					<textarea id="message" class="input100" name="message" placeholder="<%= t('.message_placeholder') %>"></textarea>
+					<span class="focus-input100"></span>
+				</div>
+
+				<div class="container-contact100-form-btn">
+					<button class="contact100-form-btn"><%= t('.submitform') %></button>
+					<%#= j.submit t('.submitform'), :class => 'contact100-form-btn' %>
+				</div>
+			<% end %>
+
+				<div class="contact100-more flex-col-c-m" style="background-image: url('<%= image_path('bg-01.jpg')%>');">
+
+				<div class="flex-w size1 p-b-47">
+					<div class="txt1 p-r-25">
+						<span class="lnr lnr-map-marker"></span>
+					</div>
+
+					<div class="flex-col size2">
+						<span class="txt1 p-b-20">
+							<%= t('.heading1') %>
+						</span>
+
+						<span class="txt2">
+							Mada Center 8th floor, 379 Hudson St, New York, NY 10018 US
+						</span>
+					</div>
+				</div>
+
+				<div class="dis-flex size1 p-b-47">
+					<div class="txt1 p-r-25">
+						<span class="lnr lnr-phone-handset"></span>
+					</div>
+
+					<div class="flex-col size2">
+						<span class="txt1 p-b-20">
+							<%= t('.heading2') %>
+						</span>
+
+						<span class="txt3">
+							+1 800 1236879
+						</span>
+					</div>
+				</div>
+
+				<div class="dis-flex size1 p-b-47">
+					<div class="txt1 p-r-25">
+						<span class="lnr lnr-envelope"></span>
+					</div>
+
+					<div class="flex-col size2">
+						<span class="txt1 p-b-20">
+							<%= t('.heading3') %>
+						</span>
+
+						<span class="txt3">
+							contact@example.com
+						</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="dropDownSelect1"></div>
+
+	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+	<script src="vendor/animsition/js/animsition.min.js"></script>
+	<script src="vendor/bootstrap/js/popper.js"></script>
+	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+	<script src="vendor/select2/select2.min.js"></script>
+	<script src="vendor/daterangepicker/moment.min.js"></script>
+	<script src="vendor/daterangepicker/daterangepicker.js"></script>
+	<script src="vendor/countdowntime/countdowntime.js"></script>
+    
+  <%= javascript_pack_tag "main" %>
+	
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-23581568-13');
+	</script>
+</body>
+</html>

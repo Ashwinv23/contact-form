@@ -1,0 +1,21 @@
+default: &default
+  adapter: mysql2
+  encoding: utf8mb4
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  username: rails_user
+  password: secretpassword
+  socket: /var/run/mysqld/mysqld.sock
+
+development:
+  <<: *default
+  database: ContactForm_development
+
+test:
+  <<: *default
+  database: ContactForm_test
+
+production:
+  <<: *default
+  database: ContactForm_production
+  username: ContactForm
+  password: <%= ENV['CONTACTFORM_DATABASE_PASSWORD'] %>
