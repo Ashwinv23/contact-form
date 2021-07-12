@@ -1,24 +1,9 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Steps to run the APP
 
-Things you may want to cover:
+* Ruby version - 2.7.3
+* Rails version - 6.1.3
+* Mysql version - 8.0.25-0ubuntu0.20.04.1
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* Please use the mysql username and password in the database config and make sure it has the access privileges to the DB.
