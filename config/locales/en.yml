@@ -21,5 +21,15 @@ en:
           heading1: "Address"
           heading2: "Lets Talk"
           heading3: "General Support"
+
     create:
           success: "Submitted Successfully"
+
+  user_mailer:
+    contact_created:
+          salutation: "Dear Sir/Madam,"
+          para1: "We have received your message through the contact us form."
+          para2: "We will be contacting you at the earliest."
+          para3: "Thanks for writing to us and have a great day!"
+          best_wi: "Best Wishes"
+          team_aj: "Team Ajackus"

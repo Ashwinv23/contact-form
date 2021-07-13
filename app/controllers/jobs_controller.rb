@@ -7,6 +7,7 @@ class JobsController < ApplicationController
   def create
     @job = Job.new(job_params)
     if @job.save
+      UserMailer.with(email: params[:email]).contact_created.deliver_later
       redirect_to root_path, notice: t('.success')
     else
       render :contact, status: :unprocessable_entity

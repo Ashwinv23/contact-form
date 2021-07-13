@@ -21,5 +21,15 @@ fr:
           heading1: "Adresse"
           heading2: "Parlons"
           heading3: "Support général"
+
     create:
           success: "Soumis avec succès"
+
+  user_mailer:
+    contact_created:
+          salutation: "Cher Monsieur/Madame"
+          para1: "Nous avons bien reçu votre message via le formulaire de contact."
+          para2: "Nous vous contacterons au plus tôt."
+          para3: "Merci de nous avoir écrit et bonne journée !"
+          best_wi: "Meilleurs vœux"
+          team_aj: "Équipe Ajackus"
